@@ -364,5 +364,6 @@ PARTICLE.prototype = {
 		this.vy *= this.FRICTION;
 	}
 };
-
+$(function(){
 	RENDERER.init();
+});
