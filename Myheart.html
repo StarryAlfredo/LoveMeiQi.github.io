@@ -1,55 +1,621 @@
-  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>藏在我心里的那个小小的你。</title>
-	        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-                <link type="text/css" rel="stylesheet" href="./static/css/MyHeartCss.css"/ >
-		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
-		<script type="text/javascript" src="./static/js/jscex.min.js"></script>
-		<script type="text/javascript" src="./static/js/MyHeartJs.js"></script>
-	</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
 
-<div class="scene">
-  <div class="page page-1 active">
-    <div class="half left"></div>
-    <div class="half right withText">
-      <h3 class="heading">这个世界上最美好的相遇便是就别重逢，我们之间我不想留有遗憾，还记得你看海的样子么，我真的真的很喜欢那个眺望无尽海洋的少女</h3>
-    </div>
+#section01 { background: url(https://picsum.photos/1200/800?image=575) center center / cover no-repeat;}
+#section02 { background: url(https://picsum.photos/1200/800?image=1016) center center / cover no-repeat;}
+#section03 { background: url(https://picsum.photos/1200/800?image=869) center center / cover no-repeat;}
+#section04 { background: url(https://picsum.photos/1200/800?image=506) center center / cover no-repeat;}
+#section05 { background: url(https://picsum.photos/1200/800?image=1037) center center / cover no-repeat;}
+#section06 { background: url(https://picsum.photos/1200/800?image=901) center center / cover no-repeat;}
+#section07 { background: url(https://picsum.photos/1200/800?image=675) center center / cover no-repeat;}
+#section08 { background: url(https://picsum.photos/1200/800?image=1050) center center / cover no-repeat;}
+#section09 { background: url(https://picsum.photos/1200/800?image=902) center center / cover no-repeat;}
+#section10 { background: url(https://picsum.photos/1200/800?image=516) center center / cover no-repeat;}
+
+#thanks {
+  background-color: #fff;
+}
+#thanks::after {
+  content: none;
+}
+#thanks div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#thanks h2 {
+  margin-bottom: 60px;
+  color: #333;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+#thanks p {
+  color: #333;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+#thanks p a {
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+#thanks p a:hover {
+  color: #888;
+}
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+
+
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section02 a {
+  padding-top: 60px;
+}
+#section02 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section02 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section03 a {
+  padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+#section04 a {
+  padding-top: 60px;
+}
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+
+#section05 a {
+  padding-top: 70px;
+}
+#section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+
+#section06 a {
+  padding-top: 70px;
+}
+#section06 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: sdb06 1.5s infinite;
+  animation: sdb06 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb06 {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb06 {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+#section08 a {
+  padding-top: 60px;
+}
+#section08 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section08 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+
+
+#section09 a {
+  padding-top: 80px;
+}
+#section09 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section09 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section09 a span::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  content: '';
+  margin-left: -9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+<script>
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
+</head>
+
+<body>
+<section id="section01" class="demo">
+  <h1>Scroll Down Button #1</h1>
+  <img src="">
+  </img>
+  <a href="#section02"><span></span>Scroll</a>
+</section>
+<section id="section02" class="demo">
+  <h1>Scroll Down Button #2</h1>
+  <a href="#section03"><span></span>Scroll</a>
+</section>
+<section id="section03" class="demo">
+  <h1>Scroll Down Button #3</h1>
+  <a href="#section04"><span></span>Scroll</a>
+</section>
+<section id="section04" class="demo">
+  <h1>Scroll Down Button #4</h1>
+  <a href="#section05"><span></span>Scroll</a>
+</section>
+<section id="section05" class="demo">
+  <h1>Scroll Down Button #5</h1>
+  <a href="#section06"><span></span>Scroll</a>
+</section>
+<section id="section06" class="demo">
+  <h1>Scroll Down Button #6</h1>
+  <a href="#section07"><span></span>Scroll</a>
+</section>
+<section id="section07" class="demo">
+  <h1>Scroll Down Button #7</h1>
+  <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+</section>
+<section id="section08" class="demo">
+  <h1>Scroll Down Button #8</h1>
+  <a href="#section09"><span></span>Scroll</a>
+</section>
+<section id="section09" class="demo">
+  <h1>Scroll Down Button #9</h1>
+  <a href="#section10"><span></span>Scroll</a>
+</section>
+<section id="section10" class="demo">
+  <h1>Scroll Down Button #10</h1>
+  <a href="#thanks"><span></span>Scroll</a>
+</section>
+<section id="thanks">
+  <div>
+    <h2>Thanks!</h2>
   </div>
-  <div class="page page-2">
-    <div class="half left withText">
-      <h3 class="heading">我会努力的锻炼体魄，而不是用自己瘦弱的身板喊出我爱你。哈哈，你看你的指甲还是很好看，我也有好多天忍住没啃指甲了呢。回来给你检查呀。嘿嘿
-	    </h3>
-    </div>
-    <div class="half right"></div>
-  </div>
-  <div class="page page-3">
-    <div class="half left"></div>
-    <div class="half right withText">
-      <h3 class="heading">还记得一模考试后那个雾霾天么，那是你第一次轻轻的挽住了我的手，我对你说到，“这一次，我再也不会放开了”。现在在寒假，但我还是忍不住每天都在想你
-	      </h3>
-    </div>
-  </div>
-  <div class="page page-4">
-    <div class="half left withText">
-      <h3 class="heading">“有些人，见三百次都不够”，“有些人见三次就够了”。这份失而复得的感情，我们一定会好好的守护。你在我心里留下了那片汪洋</h3> 
-    </div>
-    <div class="half right"></div>
-  </div>
-</div>
-<div class="nav-panel">
-  <div class="scroll-btn up"></div>
-  <div class="scroll-btn down"></div>
-  <nav>
-    <ul>
-      <li data-target="1" class="nav-btn nav-page1 active"></li>
-      <li data-target="2" class="nav-btn nav-page2"></li>
-      <li data-target="3" class="nav-btn nav-page3"></li>
-      <li data-target="4" class="nav-btn nav-page4"></li>
-    </ul>
-  </nav>
-</div>
-  </body>
-  </html>
+</section>
+</body>
+</html>
