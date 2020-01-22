@@ -50,7 +50,7 @@ html, body {
   will-change: transform, opacity;
 }
 .page:nth-child(1) .left {
-  background-image: url("https://github.com/StarryAlfredo/LoveMeiQi.github.io/blob/master/static/Image/1.jpg");
+  background-image: url("static/Image/1.jpg");
 }
 .page:nth-child(1) .right {
   background-image: url("https://picsum.photos/id/101/1309/865");
@@ -59,16 +59,16 @@ html, body {
   background-image: url("https://picsum.photos/id/102/1309/865");
 }
 .page:nth-child(2) .right {
-  background-image: url("https://github.com/StarryAlfredo/LoveMeiQi.github.io/blob/master/static/Image/3.jpg");
+  background-image: url("static/Image/3.jpg");
 }
 .page:nth-child(3) .left {
-  background-image: url("https://github.com/StarryAlfredo/LoveMeiQi.github.io/blob/master/static/Image/4.jpg");
+  background-image: url("static/Image/4.jpg");
 }
 .page:nth-child(3) .right {
   background-image: url("https://picsum.photos/id/105/1309/865");
 }
 .page:nth-child(4) .left {
-  background-image: url("https://github.com/StarryAlfredo/LoveMeiQi.github.io/blob/master/static/Image/5.jpg");
+  background-image: url("static/Image/5.jpg");
 }
 .page:nth-child(4) .right {
   background-image: url("https://picsum.photos/id/100/1309/865");
